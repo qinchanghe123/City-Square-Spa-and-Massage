@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="City Square Spa and Massage in Vancouver offers foot reflexology, body massage, head spa, facial care, aromatherapy, acupuncture, and focused relaxation treatments.">
+  <meta name="description" content="City Square Spa and Massage in Vancouver offers foot reflexology, body massage, head spa, facial care, aromatherapy, infrared moxibustion lamp add-ons, acupuncture, and focused relaxation treatments.">
   <title>City Square Spa and Massage | Vancouver Spa & Massage</title>
   <style>
     :root {
-      --ink: #1f2522;
-      --muted: #5f6b66;
-      --paper: #fbfaf7;
-      --soft: #eef4f0;
-      --mist: #e6f0ee;
-      --green: #173d38;
-      --green-2: #2e665e;
-      --coral: #bf6f44;
-      --amber: #e0b35f;
-      --line: rgba(31, 37, 34, 0.13);
-      --shadow: 0 22px 60px rgba(23, 61, 56, 0.14);
+      --ink: #2d2118;
+      --muted: #755f4a;
+      --paper: #fbf7f0;
+      --soft: #f3eadf;
+      --mist: #eadccb;
+      --green: #5a3823;
+      --green-2: #8b6746;
+      --coral: #a66a3f;
+      --amber: #d2a461;
+      --line: rgba(77, 48, 29, 0.15);
+      --shadow: 0 22px 60px rgba(89, 57, 34, 0.16);
       --max: 1180px;
       --radius: 8px;
       --hero-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1L-0O6Juxasb8QicSAXdnWLSQjLrVvGVr8HPij_dvsgW7cWCeMVBGB-12hqGhPUkx5oA&usqp=CAU");
@@ -67,7 +67,7 @@
       position: relative;
       overflow: hidden;
       background:
-        linear-gradient(180deg, #fbfaf7 0%, #eef4f0 42%, #f7f0e8 72%, #fbfaf7 100%);
+        linear-gradient(180deg, #fbf7f0 0%, #f3eadf 42%, #eadccb 72%, #fbf7f0 100%);
     }
 
     .nav {
@@ -79,8 +79,8 @@
       transform: translateX(-50%);
       border: 1px solid rgba(255, 255, 255, 0.54);
       border-radius: 8px;
-      background: rgba(23, 61, 56, 0.78);
-      box-shadow: 0 16px 40px rgba(12, 34, 31, 0.18);
+      background: rgba(90, 56, 35, 0.84);
+      box-shadow: 0 16px 40px rgba(55, 35, 22, 0.22);
       backdrop-filter: blur(18px);
     }
 
@@ -113,6 +113,42 @@
       background: #f7d78d;
       font-size: 0.78rem;
       font-weight: 900;
+    }
+
+    .brand-logo {
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      width: 56px;
+      height: 56px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.62);
+      border-radius: 14px;
+      background: #fffaf3;
+      padding: 6px;
+      box-shadow: 0 8px 20px rgba(55, 35, 22, 0.18), inset 0 0 0 1px rgba(255, 250, 243, 0.76);
+    }
+
+    .brand-logo img,
+    .hero-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: saturate(1.05) contrast(1.03);
+    }
+
+    .hero-logo {
+      display: grid;
+      place-items: center;
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.54);
+      border-radius: 26px;
+      padding: 16px;
+      background: rgba(255, 250, 243, 0.96);
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.22), inset 0 0 0 1px rgba(255, 250, 243, 0.82);
     }
 
     .nav-links {
@@ -279,8 +315,8 @@
       inset: 0;
       z-index: -2;
       background:
-        linear-gradient(90deg, rgba(11, 31, 29, 0.88) 0%, rgba(11, 31, 29, 0.6) 46%, rgba(11, 31, 29, 0.2) 100%),
-        linear-gradient(180deg, rgba(11, 31, 29, 0.2), rgba(11, 31, 29, 0.82));
+        linear-gradient(90deg, rgba(48, 31, 20, 0.88) 0%, rgba(48, 31, 20, 0.62) 46%, rgba(48, 31, 20, 0.22) 100%),
+        linear-gradient(180deg, rgba(48, 31, 20, 0.22), rgba(48, 31, 20, 0.84));
     }
 
     .hero-content {
@@ -454,7 +490,7 @@
 
     .value {
       min-height: 118px;
-      border: 1px solid rgba(23, 61, 56, 0.16);
+      border: 1px solid rgba(90, 56, 35, 0.16);
       border-radius: 8px;
       padding: 18px;
       background: var(--soft);
@@ -488,7 +524,7 @@
     }
 
     .services {
-      background: linear-gradient(180deg, #eef4f0 0%, #fbfaf7 100%);
+      background: linear-gradient(180deg, #f3eadf 0%, #fbf7f0 100%);
     }
 
     .service-grid {
@@ -508,7 +544,7 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       background: rgba(255, 255, 255, 0.82);
-      box-shadow: 0 18px 50px rgba(23, 61, 56, 0.09);
+      box-shadow: 0 18px 50px rgba(89, 57, 34, 0.10);
     }
 
     .spotlight::before {
@@ -535,6 +571,28 @@
       position: relative;
       z-index: 1;
     }
+
+    .service-card.featured-add-on {
+      border-color: rgba(166, 106, 63, 0.34);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(250, 239, 223, 0.94));
+    }
+
+    .service-card.featured-add-on::after {
+      content: "Complimentary with Body Massage";
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      z-index: 3;
+      border-radius: 999px;
+      padding: 7px 10px;
+      color: #fffaf3;
+      background: rgba(90, 56, 35, 0.88);
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.01em;
+      box-shadow: 0 10px 22px rgba(55, 35, 22, 0.2);
+    }
+
 
     .service-media {
       position: relative;
@@ -594,11 +652,11 @@
     }
 
     .duration-pill {
-      border: 1px solid rgba(23, 61, 56, 0.16);
+      border: 1px solid rgba(90, 56, 35, 0.16);
       border-radius: 8px;
       padding: 8px 10px;
       color: var(--green);
-      background: #f6fbf8;
+      background: #fff9f2;
       font-size: 0.88rem;
       font-weight: 800;
     }
@@ -776,7 +834,7 @@
     }
 
     .gallery {
-      background: #fbfaf7;
+      background: #fbf7f0;
     }
 
     .gallery-grid {
@@ -817,7 +875,7 @@
       border-radius: 8px;
       padding: 18px;
       color: #fff;
-      background: rgba(13, 35, 32, 0.76);
+      background: rgba(69, 45, 30, 0.78);
       backdrop-filter: blur(14px);
     }
 
@@ -836,7 +894,7 @@
       min-height: 160px;
       overflow: hidden;
       border-radius: 8px;
-      box-shadow: 0 16px 42px rgba(23, 61, 56, 0.1);
+      box-shadow: 0 16px 42px rgba(89, 57, 34, 0.12);
       cursor: pointer;
       border: 2px solid transparent;
       background: var(--green);
@@ -847,7 +905,7 @@
     }
 
     .reviews {
-      background: linear-gradient(180deg, #e6f0ee 0%, #f6efe7 100%);
+      background: linear-gradient(180deg, #eadccb 0%, #f8efe5 100%);
       padding-left: 0;
       padding-right: 0;
     }
@@ -918,7 +976,7 @@
     }
 
     .faq-contact {
-      background: #fbfaf7;
+      background: #fbf7f0;
     }
 
     .faq-grid {
@@ -1088,7 +1146,7 @@
         align-items: stretch;
         border-radius: 8px;
         padding: 12px;
-        background: rgba(23, 61, 56, 0.96);
+        background: rgba(90, 56, 35, 0.96);
         box-shadow: var(--shadow);
       }
 
@@ -1161,7 +1219,7 @@
       }
 
       .brand {
-        max-width: 230px;
+        max-width: 270px;
       }
 
       .brand-text {
@@ -1221,7 +1279,7 @@
     <nav class="nav" aria-label="Main navigation">
       <div class="nav-inner">
         <a class="brand" href="#home" aria-label="City Square Spa and Massage home">
-          <span class="brand-mark">CS</span>
+          <span class="brand-logo"><img src="logo.jpg" alt="City Square Spa and Massage logo"></span>
           <span class="brand-text">City Square Spa and Massage</span>
         </a>
         <button class="mobile-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
@@ -1245,6 +1303,7 @@
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-bg-next" aria-hidden="true"></div>
       <div class="hero-content reveal">
+        <div class="hero-logo" aria-hidden="true"><img src="logo.jpg" alt=""></div>
         <span class="eyebrow">Vancouver spa and massage</span>
         <h1>City Square Spa and Massage</h1>
         <p class="hero-copy">Find a quiet pause in the heart of City Square. Our private treatment rooms, focused touch, and extended daily hours make it easy to reset after work, travel, training, or a long week.</p>
@@ -1406,7 +1465,7 @@
             </ul>
             <div class="hero-actions" style="margin-top: 24px;">
               <a class="btn btn-primary magnetic" href="sms:+17788581889">Text for Booking</a>
-              <a class="btn btn-secondary magnetic" style="color: var(--green); border-color: rgba(23, 61, 56, 0.18); background: #eef4f0;" href="https://www.google.com/maps/search/?api=1&query=555%20W%2012th%20Ave%20Unit%20139%2C%20Vancouver%2C%20BC%20V5Z%203X7%2C%20Canada">Get Directions</a>
+              <a class="btn btn-secondary magnetic" style="color: var(--green); border-color: rgba(90, 56, 35, 0.18); background: #f3eadf;" href="https://www.google.com/maps/search/?api=1&query=555%20W%2012th%20Ave%20Unit%20139%2C%20Vancouver%2C%20BC%20V5Z%203X7%2C%20Canada">Get Directions</a>
             </div>
           </div>
           <div class="map-card reveal">
@@ -1422,6 +1481,20 @@
   </div>
 
   <script>
+
+    document.querySelectorAll("img").forEach((img) => {
+      img.addEventListener("error", () => {
+        if (img.dataset.fallbackApplied === "true") {
+          img.style.display = "none";
+          return;
+        }
+        if (img.alt && img.alt.includes("Aromatherapy")) {
+          img.dataset.fallbackApplied = "true";
+          img.src = "aromatherapy-inhaler.svg";
+        }
+      });
+    });
+
     const imagePool = {
       foot: [
         "https://i.pinimg.com/1200x/6a/df/fe/6adffe5706bdce88dd2d2d0fc6875398.jpg",
@@ -1441,7 +1514,12 @@
       facial: [
         "https://images.squarespace-cdn.com/content/v1/5d5f2058a79cbf000111652a/1586842536251-IY8XEBZ4JINBCSKZKAHT/FaceMassage.jpg",
         "https://i.pinimg.com/1200x/84/cd/b7/84cdb7509c5bacdc80bdf1336985d900.jpg",
-        "https://i.pinimg.com/736x/a7/5e/f0/a75ef039455f894cd59d004e84b09e5a.jpg"
+        "https://i.pinimg.com/736x/a7/5e/f0/a75ef039455f894cd59d004e84b09e5a.jpg",
+        "https://i.pinimg.com/1200x/8c/9f/a7/8c9fa7dbc6e87d9a2d83c5bf0acf7874.jpg",
+        "https://i.pinimg.com/736x/0d/35/04/0d3504647c8515169c732858da0fa794.jpg",
+        "https://i.pinimg.com/1200x/70/6c/04/706c04d0433444675519c5a860936831.jpg",
+        "https://i.pinimg.com/736x/39/9d/b8/399db853fa16b84bc73cf9946edd3f1b.jpg",
+        "https://i.pinimg.com/736x/8c/d2/2d/8cd22d920b7e97782bb7588308cad370.jpg"
       ],
       scalp: [
         "https://i.pinimg.com/736x/04/62/f3/0462f3dca56fdbf3b7e4236123439bd4.jpg",
@@ -1460,10 +1538,15 @@
         "https://i.pinimg.com/1200x/72/f0/53/72f053decc513a9d6882798d8689f0e5.jpg"
       ],
       oil: [
-        "3.jpg",
-        "https://i.pinimg.com/736x/c8/07/c4/c807c4647d26dd39335f13e834586a22.jpg",
-        "https://i.pinimg.com/736x/3f/40/a8/3f40a894a04a10469e8a12e5f8afd4f8.jpg",
-        "https://i.pinimg.com/1200x/45/60/3b/45603b2af0a2b91d6a71314b0585ad1a.jpg"
+        "https://i.pinimg.com/1200x/96/7b/80/967b808ebf41031000d156132e989aee.jpg",
+        "https://i.pinimg.com/736x/2e/f6/09/2ef6093ece03f0503004090f99eef2e4.jpg",
+        "https://i.pinimg.com/736x/82/14/59/8214594dbae377c242a95acc29bd29d4.jpg",
+        "https://i.pinimg.com/736x/b7/76/b4/b776b4110a52d54ad44d82de79d1b7fc.jpg",
+        "https://i.pinimg.com/736x/7b/26/1e/7b261e545282c832243d6caf9b21c822.jpg",
+        "https://i.pinimg.com/736x/3f/8c/a2/3f8ca2a11949871ac4e201e5ce48c330.jpg"
+      ],
+      infraredMoxibustion: [
+        "4.jpg"
       ],
       hotStone: [
         "https://i.pinimg.com/736x/24/68/83/246883a8470e80eccab52eb55d440e50.jpg",
@@ -1490,7 +1573,15 @@
         imageKey: "body",
         price: "$48+",
         durations: [["30 min", "$48"], ["60 min", "$89"], ["90 min", "$129"]],
-        desc: "A restorative body session for everyday tension, stiff backs, sore legs, and mental fatigue. Ideal when you want a reset without overcomplicating the visit."
+        desc: "A restorative body session for everyday tension, stiff backs, sore legs, and mental fatigue. Ideal when you want a reset without overcomplicating the visit. Current body massage bookings may include the infrared moxibustion lamp as a complimentary warming add-on."
+      },
+      {
+        name: "Infrared Moxibustion Lamp",
+        imageKey: "infraredMoxibustion",
+        price: "Free add-on",
+        durations: [["With Body Massage", "Complimentary"]],
+        desc: "A warming infrared moxibustion-lamp add-on currently offered with body massage sessions. Gentle radiant heat creates a cozy, soothing layer during bodywork and can be included when the equipment is available.",
+        addOn: true
       },
       {
         name: "Deep Tissue Body Massage",
@@ -1539,7 +1630,7 @@
         imageKey: "oil",
         price: "$128",
         durations: [["60 min", "$128"]],
-        desc: "Essential-oil relaxation for stress, fatigue, and sensory overload. Ideal when you want the session to feel soothing, fragrant, and restorative. We use doTERRA essential oils selected for relaxation and comfort: oils such as Lavender and Serenity can help ease emotional tension, create a peaceful atmosphere, and support better sleep quality. Citrus and mint oils, such as Wild Orange and Motivate, can bring a sense of energy, inspiration, and emotional lift. Fresh and clarifying blends, such as Breathe, help refresh the air and support comfortable, easy breathing."
+        desc: "Essential-oil relaxation for stress, fatigue, and sensory overload. The aromatherapy setup now focuses on clean essential-oil aroma rather than heavy massage-oil visuals, with inhaler-style aroma presentation and gentle fragrant notes selected for comfort. Calming floral notes can help ease emotional tension and create a peaceful atmosphere, while citrus, mint, and fresh clarifying notes can feel brighter, refreshing, and supportive of easy breathing."
       },
       {
         name: "Facial Care",
@@ -1574,6 +1665,11 @@
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1L-0O6Juxasb8QicSAXdnWLSQjLrVvGVr8HPij_dvsgW7cWCeMVBGB-12hqGhPUkx5oA&usqp=CAU",
         title: "Restorative bodywork",
         copy: "Focused touch for muscle tension and everyday stress."
+      },
+      {
+        src: imagePool.infraredMoxibustion[0],
+        title: "Infrared moxibustion warmth",
+        copy: "A complimentary warming add-on for eligible body massage sessions."
       },
       {
         src: "https://images.squarespace-cdn.com/content/v1/5d5f2058a79cbf000111652a/1586842536251-IY8XEBZ4JINBCSKZKAHT/FaceMassage.jpg",
@@ -1625,7 +1721,7 @@
 
     services.forEach((service) => {
       const card = document.createElement("article");
-      card.className = "service-card reveal spotlight";
+      card.className = "service-card reveal spotlight" + (service.addOn ? " featured-add-on" : "");
 
       const media = document.createElement("div");
       media.className = "service-media";
