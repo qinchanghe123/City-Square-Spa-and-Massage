@@ -146,9 +146,9 @@
       overflow: hidden;
       border: 1px solid rgba(255, 255, 255, 0.54);
       border-radius: 26px;
-      padding: 16px;
-      background: rgba(255, 250, 243, 0.96);
-      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.22), inset 0 0 0 1px rgba(255, 250, 243, 0.82);
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
     }
 
     .nav-links {
@@ -1710,12 +1710,11 @@
       }
     ];
 
-    const heroImages = [
-      imagePool.body[1],
-      imagePool.foot[0],
-      imagePool.facial[0],
-      imagePool.scalp[0]
-    ];
+    const heroImages = Array.from(new Set(
+      Object.values(imagePool)
+        .flat()
+        .filter((src) => /^https?:\/\//i.test(src))
+    ));
 
     const serviceGrid = document.getElementById("serviceGrid");
 
