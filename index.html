@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="City Square Spa and Massage in Vancouver offers foot reflexology, body massage, head spa, facial care, aromatherapy, infrared moxibustion lamp add-ons, acupuncture, and focused relaxation treatments.">
+  <meta name="description" content="City Square Spa and Massage in Vancouver offers foot reflexology, body massage, head spa, facial care, aromatherapy, infrared moxibustion lamp therapy, acupuncture, and focused relaxation treatments.">
   <title>City Square Spa and Massage | Vancouver Spa & Massage</title>
   <style>
     :root {
@@ -149,6 +149,16 @@
       padding: 0;
       background: transparent;
       box-shadow: none;
+    }
+
+    .hero-tagline {
+      display: inline-block;
+      margin: -6px 0 24px;
+      color: #f7d78d;
+      font-size: 1.08rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      text-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
     }
 
     .nav-links {
@@ -642,6 +652,125 @@
       color: var(--muted);
       font-size: 0.96rem;
       line-height: 1.68;
+    }
+
+    .infrared-feature {
+      grid-column: 1 / -1;
+      display: grid;
+      gap: 22px;
+      border: 1px solid rgba(166, 106, 63, 0.34);
+      border-radius: 8px;
+      padding: 30px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(250, 239, 223, 0.96));
+      box-shadow: 0 24px 70px rgba(89, 57, 34, 0.14);
+    }
+
+    .infrared-feature > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .infrared-feature-head {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .infrared-kicker {
+      display: inline-flex;
+      width: fit-content;
+      border-radius: 999px;
+      padding: 7px 11px;
+      color: #fffaf3;
+      background: var(--green);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.01em;
+      margin-bottom: 12px;
+    }
+
+    .infrared-feature h3 {
+      font-size: 2.25rem;
+    }
+
+    .infrared-copy {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.72;
+    }
+
+    .infrared-benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .infrared-info-card {
+      border: 1px solid rgba(90, 56, 35, 0.13);
+      border-radius: 8px;
+      padding: 18px;
+      background: rgba(255, 249, 242, 0.9);
+    }
+
+    .infrared-info-card h4 {
+      margin-bottom: 10px;
+      color: var(--green);
+      font-size: 1rem;
+    }
+
+    .infrared-list {
+      display: grid;
+      gap: 8px;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.94rem;
+      line-height: 1.55;
+    }
+
+    .infrared-list li {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 8px;
+    }
+
+    .infrared-list li::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      margin-top: 8px;
+      border-radius: 50%;
+      background: var(--coral);
+    }
+
+    .infrared-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .infrared-photo {
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: 8px;
+      border: 1px solid rgba(90, 56, 35, 0.12);
+      background: var(--soft);
+      box-shadow: 0 14px 32px rgba(89, 57, 34, 0.12);
+    }
+
+    .infrared-photo img {
+      transition: transform 0.55s ease;
+    }
+
+    .infrared-photo:hover img {
+      transform: scale(1.05);
+    }
+
+    .infrared-note {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.6;
     }
 
     .durations {
@@ -1172,7 +1301,9 @@
       .booking-grid,
       .gallery-grid,
       .faq-grid,
-      .contact-grid {
+      .contact-grid,
+      .infrared-feature-head,
+      .infrared-benefit-grid {
         grid-template-columns: 1fr;
       }
 
@@ -1255,8 +1386,18 @@
       .about-panel,
       .booking-card,
       .contact-card,
-      .offer-card {
+      .offer-card,
+      .infrared-feature {
         padding: 20px;
+      }
+
+      .infrared-feature h3 {
+        font-size: 1.65rem;
+      }
+
+      .infrared-gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
       }
 
       .service-media {
@@ -1304,6 +1445,7 @@
       <div class="hero-bg-next" aria-hidden="true"></div>
       <div class="hero-content reveal">
         <div class="hero-logo" aria-hidden="true"><img src="logo.jpg" alt=""></div>
+        <p class="hero-tagline">A relaxed life starts here.</p>
         <span class="eyebrow">Vancouver spa and massage</span>
         <h1>City Square Spa and Massage</h1>
         <p class="hero-copy">Find a quiet pause in the heart of City Square. Our private treatment rooms, focused touch, and extended daily hours make it easy to reset after work, travel, training, or a long week.</p>
@@ -1538,15 +1680,19 @@
         "https://i.pinimg.com/1200x/72/f0/53/72f053decc513a9d6882798d8689f0e5.jpg"
       ],
       oil: [
-        "https://i.pinimg.com/1200x/96/7b/80/967b808ebf41031000d156132e989aee.jpg",
-        "https://i.pinimg.com/736x/2e/f6/09/2ef6093ece03f0503004090f99eef2e4.jpg",
-        "https://i.pinimg.com/736x/82/14/59/8214594dbae377c242a95acc29bd29d4.jpg",
-        "https://i.pinimg.com/736x/b7/76/b4/b776b4110a52d54ad44d82de79d1b7fc.jpg",
         "https://i.pinimg.com/736x/7b/26/1e/7b261e545282c832243d6caf9b21c822.jpg",
-        "https://i.pinimg.com/736x/3f/8c/a2/3f8ca2a11949871ac4e201e5ce48c330.jpg"
+        "https://i.pinimg.com/736x/5c/31/be/5c31be04ef3efed4ac2e7c8b33b32c91.jpg",
+        "https://i.pinimg.com/736x/0b/22/90/0b2290192182625195df447499e236d0.jpg",
+        "https://i.pinimg.com/736x/79/b3/57/79b3575e2de37f7b46f51464655c4413.jpg",
+        "./3.jpg"
       ],
       infraredMoxibustion: [
-        "4.jpg"
+        "y1.jpg",
+        "y2.jpg",
+        "y3.jpg",
+        "y4.jpg",
+        "y5.jpg",
+        "y6.jpg"
       ],
       hotStone: [
         "https://i.pinimg.com/736x/24/68/83/246883a8470e80eccab52eb55d440e50.jpg",
@@ -1574,14 +1720,6 @@
         price: "$48+",
         durations: [["30 min", "$48"], ["60 min", "$89"], ["90 min", "$129"]],
         desc: "A restorative body session for everyday tension, stiff backs, sore legs, and mental fatigue. Ideal when you want a reset without overcomplicating the visit. Current body massage bookings may include the infrared moxibustion lamp as a complimentary warming add-on."
-      },
-      {
-        name: "Infrared Moxibustion Lamp",
-        imageKey: "infraredMoxibustion",
-        price: "Free add-on",
-        durations: [["With Body Massage", "Complimentary"]],
-        desc: "A warming infrared moxibustion-lamp add-on currently offered with body massage sessions. Gentle radiant heat creates a cozy, soothing layer during bodywork and can be included when the equipment is available.",
-        addOn: true
       },
       {
         name: "Deep Tissue Body Massage",
@@ -1716,6 +1854,59 @@
         .filter((src) => /^https?:\/\//i.test(src))
     ));
 
+    const infraredFeatureImages = ["y1.jpg", "y2.jpg", "y3.jpg", "y4.jpg", "y5.jpg", "y6.jpg"];
+
+    function buildInfraredFeature() {
+      const article = document.createElement("article");
+      article.id = "infrared-moxibustion";
+      article.className = "infrared-feature reveal spotlight";
+      article.innerHTML = `
+        <div class="infrared-feature-head">
+          <div>
+            <span class="infrared-kicker">Infrared Moxibustion Lamp</span>
+            <h3>Deep warming comfort for body therapy guests.</h3>
+            <p class="infrared-copy">This dedicated infrared moxibustion-lamp option uses focused radiant warmth to help the body feel relaxed, warm, and easier to unwind before or during body-focused treatments.</p>
+          </div>
+          <p class="infrared-copy">Place this add-on after the higher-priced body therapy option so guests can clearly understand who it is for, what it may support, and how the device looks in use.</p>
+        </div>
+        <div class="infrared-benefit-grid">
+          <div class="infrared-info-card">
+            <h4>Suitable for</h4>
+            <ul class="infrared-list">
+              <li>Guests who often feel cold in the waist, abdomen, shoulders, knees, or feet.</li>
+              <li>People with long-term fatigue, stiffness, or muscles that are slow to relax.</li>
+              <li>Desk workers, frequent travelers, seniors, and wellness guests who prefer gentle heat.</li>
+            </ul>
+          </div>
+          <div class="infrared-info-card">
+            <h4>Comfort benefits</h4>
+            <ul class="infrared-list">
+              <li>Creates steady, focused warmth for a cozy body-therapy experience.</li>
+              <li>Helps soften tight-feeling muscles and supports a relaxed state.</li>
+              <li>Encourages a warm circulation sensation around tired or stiff areas.</li>
+            </ul>
+          </div>
+          <div class="infrared-info-card">
+            <h4>How it is used</h4>
+            <ul class="infrared-list">
+              <li>The lamp is positioned over the target area at a comfortable distance.</li>
+              <li>Heat level and placement can be adjusted for personal comfort.</li>
+              <li>Best paired with body massage, body therapy, or a calm recovery visit.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="infrared-gallery" aria-label="Infrared moxibustion lamp photos">
+          ${infraredFeatureImages.map((src, index) => `
+            <figure class="infrared-photo">
+              <img src="${src}" alt="Infrared moxibustion lamp photo ${index + 1}" loading="lazy">
+            </figure>
+          `).join("")}
+        </div>
+        <p class="infrared-note">Wellness note: this service is designed for relaxation and comfort support, not medical diagnosis or treatment. Avoid direct heat on injured skin, areas with reduced sensation, acute inflammation, or during pregnancy unless approved by a healthcare professional.</p>
+      `;
+      return article;
+    }
+
     const serviceGrid = document.getElementById("serviceGrid");
 
     services.forEach((service) => {
@@ -1750,6 +1941,10 @@
 
       card.append(media, body);
       serviceGrid.appendChild(card);
+
+      if (service.name === "Targeted Body Session") {
+        serviceGrid.appendChild(buildInfraredFeature());
+      }
     });
 
     function cycleImages(containerSelector, interval) {
